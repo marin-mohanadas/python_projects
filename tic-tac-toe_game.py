@@ -99,10 +99,10 @@ def execute_game():
         print('\n' * 2)
 
         if possible_wins(win_list_x):
-            print("Congrats! 'X' wins the game")
+            print("Congrats! 'X' won the game")
             break
         if possible_wins(win_list_o):
-            print("Congrats! 'O' wins the game")
+            print("Congrats! 'O' won the game")
             break
 
         cnt -= 1
