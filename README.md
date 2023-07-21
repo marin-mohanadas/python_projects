@@ -1,2 +1,2 @@
-# python_projects
+# Python Projects
 Learning Pyrhon
