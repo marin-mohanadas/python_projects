@@ -1,2 +1,2 @@
 # Python Projects
-Learning Pyrhon
+Learning Python
