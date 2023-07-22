@@ -5,7 +5,7 @@ def choose_symbol():
     user_input = ''
 
     while not flag:
-        user_input = input("Please select a symbol: ")
+        user_input = input("Please select a symbol ('X'/'O'): ")
 
         if user_input.upper() in input_list:
             flag = True
@@ -50,8 +50,6 @@ def place_symbols_on_board(my_dic, value, symbol):
     else:
         print('This position is already selected. Please choose any available positions.')
 
-    return my_dic
-
 
 # Possible wins
 def possible_wins(user_list):
@@ -85,7 +83,7 @@ def execute_game():
         print(f'Now playing {input_symbol}')
         input_value = user_inputs()
 
-        if input_value not in win_list_x and input_value not in win_list_o:
+        if (input_value not in win_list_x) and (input_value not in win_list_o):
             if input_symbol == 'X':
                 win_list_x.append(input_value)
             elif input_symbol == 'O':
